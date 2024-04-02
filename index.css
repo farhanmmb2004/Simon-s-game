@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: yellowgreen;
+}
+body{
+    height: 100vh;
+}
+h1{
+    text-decoration: underline;
+    background-color: inherit;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left:40% ; 
+ height: 250px; ;
+ width:250px ;   
+ background-color: inherit;
+}
+.common{
+    padding-top: 0px;
+    margin: 5px 0px 0px 5px;
+    background-color: aqua;
+    height: 100px; ;
+ width:100px ;
+ border: 5px solid black;
+ border-radius: 20%; 
+ 
+}
+.a{
+    background-color: violet;
+}
+.b{
+    background-color: pink;
+}
+.c{
+    background-color: blueviolet;
+}
+.d{
+    background-color: cadetblue;
+}
+.common:hover{
+    border: 2px solid blue;
+}
+.flash{
+    background-color: green;
+}
+.userflash{
+    background-color: white;
+}
+b,h2,h3{
+    background-color: inherit;
+}

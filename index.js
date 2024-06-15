@@ -5,16 +5,20 @@ let started=false;
 let level=0;
 let HS=0;
 let btns=document.querySelectorAll(".common");
-document.addEventListener("keypress",function(){
-    if(started==false){
-        started=true;
+function startGame() {
+    if (!started) {
+        started = true;
         console.log("game has been started");
         levelUp();
-        for(btn of btns){
-            btn.addEventListener("click",btnpress);
+        for (let btn of btns) {
+            btn.addEventListener("click", btnpress);
         }
+    }
 }
-});
+
+// Adding event listeners for keypress and touchstart to start the game
+document.addEventListener("keypress", startGame);
+document.addEventListener("touchstart", startGame);
 function btflash(bt){
 bt.classList.add("flash");
 setTimeout(function (){
@@ -83,3 +87,14 @@ function reset(){
     game=[];
     user=[];
 }
+
+document.addEventListener("ontouchstart",function(){
+    if(started==false){
+        started=true;
+        console.log("game has been started");
+        levelUp();
+        for(btn of btns){
+            btn.addEventListener("click",btnpress);
+        }
+}
+});

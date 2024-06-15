@@ -15,12 +15,17 @@ h1{
     display: flex;
     align-items: center;
     justify-content:center ;
+    margin-left:40% ; 
     align-content: center;
     flex-wrap: wrap;
-    margin-left:40% ; 
  height: 250px; ;
  width:250px ;   
  background-color: inherit;
+}
+@media (max-width:600px){
+    .main{
+        margin-left:22% ; 
+    }
 }
 .common{
     padding-top: 0px;

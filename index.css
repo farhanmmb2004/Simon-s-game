@@ -49,9 +49,9 @@ h1{
 .d{
     background-color: cadetblue;
 }
-.common:hover{
+/* .common:hover{
     border: 2px solid blue;
-}
+} */
 .flash{
     background-color: green;
 }
